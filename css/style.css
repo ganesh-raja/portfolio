@@ -999,3 +999,30 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* common pill style */
+.pill {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  display: inline-block; /* 🔴 IMPORTANT */
+}
+
+/* value pill */
+.pill-value {
+  color: #ffffff;
+  background: linear-gradient(90deg, #000000, #0061ff);
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* hover */
+.pill-value:hover {
+  background: linear-gradient(90deg, #0061ff, #000000);
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  /* box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3); */
+}
